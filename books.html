@@ -2,17 +2,32 @@
 <html>
 <head>
   <title>Book Haven | Book List</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <a href="index.html"> Home</a> 
-    <a href="books.html"> Books</a> 
-    <a href="register.html"> Register</a> 
-    <a href="contact.html"> Contact</a>
-  </nav>
+  <header>
+    <h1 style="color:fuchsia"><marquee> Welcome to Book Haven!</marquee></h1>
+    <p>Your cozy spot for discovering amazing reads.</p>
+    <nav class="navbar">
+      <div class="logo">📚 Book Haven</div>
+      <input type="checkbox" id="toggle-menu" class="toggle-menu">
+      <label for="toggle-menu" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="books.html">📖 Books</a></li>
+         <li><a href="login.html">🔐 Login</a></li>
+        <li><a href="register.html">📝 Register</a></li>
+        <li><a href="contact.html">📬 Contact</a></li>
+        
+        
+
+      </ul>
+    </nav>
+  
   <hr>
 
-  <h1 style="color:orchid; font-style:italic; ">Book Reviews</h1>
+  <h1 style="color:teal; font-style:italic; ">Book Reviews</h1>
 
   <table border="1px">
     <tr>
@@ -22,13 +37,13 @@
       <th>Review</th>
     </tr>
     <tr>
-      <td><img src="/Lab1_193558/images/The Alchemist 2.png" width="100"></td>
+      <td><img src="https://i.pinimg.com/originals/d2/75/53/d275535ff37ddf902a3bf0b44731b66e.jpg" width="100"></td>
       <td>The Alchemist</td>
       <td>Paulo Coelho</td>
       <td>A magical story of self-discovery.</td>
     </tr>
     <tr>
-      <td><img src="/Lab1_193558/images/Atomic.png" width="100"></td>
+      <td><img src="https://hyperweb.com.au/wp-content/uploads/2023/03/atomic-habits_gallery_hi-res_04-copy.jpg"width="100"></td>
       <td>Atomic Habits</td>
       <td>James Clear</td>
       <td>Perfect guide for building powerful habits.</td>
@@ -51,6 +66,31 @@
     “A reader lives a thousand lives before he dies. The man who never reads lives only one.” <br>
     — George R.R. Martin
   </blockquote>
+  <section class="gallery-section">
+    <h2>Our Featured Books</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/95/b7/43/95b743bec59bd0763b1fac7e52118a7d.jpg" alt="The Alchemist">
+        <p class="caption">The Alchemist</p>
+      </div>
+      <div class="gallery-item">
+        <img src=" https://i.pinimg.com/originals/c3/a1/87/c3a187af3fba68e492dfed07001fd81d.jpg" alt="Atomic Habits">
+        <p class="caption">Atomic Habits</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/78/88/1f/78881fcefdd35a1b7c6f530d5bbf904e.jpg" alt="Think and Grow Rich">
+        <p class="caption">Think and Grow Rich</p>
+        </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/92/60/21/9260219359c622f14b14c251d49b2c51.jpg" alt="The Power of Now">
+        <p class="caption">The Power of Now</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/f9/4b/bd/f94bbd6cb98b4e140d3d4ed58e97a961.jpg" alt="It ends with us ">
+        <p class="caption">It ends with us</p>
+    </div>
+    </div>
+  </section>
     <p>For more book reviews, visit our <a href="register.html">Register</a> page.</p>
     <marquee behavior="alternate">New Books Coming Soon! Stay Tuned! </marquee>
 </body>

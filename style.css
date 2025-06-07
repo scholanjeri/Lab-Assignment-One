@@ -1,0 +1,232 @@
+/* General Body Styling */
+body {
+  background: linear-gradient(to bottom right, #f9f9ff, #ffe6ff);
+  font-family: 'Times New Roman', sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: orchid;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #ffe3ec, #e0c3fc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0 0 15px 15px;
+  z-index: 999;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #6a1b9a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #4a148c;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.nav-links li a:hover {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #6a1b9a;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #f8e5ff;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    box-shadow: -4px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px 0 10px 10px;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .toggle-menu:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Form Styling */
+form {
+  background-color: palevioletred;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px dashed #dda0dd;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid lemonchiffon;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: darkmagenta;
+}
+
+/* Login Form Section */
+.form-section {
+  background: #fff0f8;
+  padding: 40px 20px;
+  margin: 40px auto;
+  border-radius: 12px;
+  max-width: 450px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.styled-form input[type="submit"] {
+  background: #a64ac9;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.styled-form input[type="submit"]:hover {
+  background: #7b1fa2;
+}
+
+/*  GALLERY Section */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-section {
+  padding: 2rem;
+  background-color: powderblue;
+}
+
+
+
+.caption {
+  margin-top: 0.5rem;
+  color: blueviolet;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+figure {
+  text-align: center;
+  background: #f0e6ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 3px;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border: 3px solid aqua;
+  transition: 0.3s;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #6a1b9a;
+}
